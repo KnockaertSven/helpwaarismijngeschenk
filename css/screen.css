@@ -1,0 +1,102 @@
+/* MAIN –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root {
+  --color-dark: #222;
+}
+
+*, html, body, li, span, p, h1, h2, h3, h4, h5, h6 {
+  font-family: "Comic Sans", sans-serif;
+  color: yellow;
+}
+
+body {
+  background: url(./../images/bg2.jpeg);
+  background-color: var(--color-dark);
+  text-align: center;
+
+  animation: appear 1s ease;
+}
+
+h1 {
+  margin-top: 20vh;
+  padding: 20px;
+  text-align: center;
+  font-size: 4rem;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+marquee {
+  height: 40px;
+  color: white;
+  font-size: 1.6rem;
+}
+
+p {
+  margin: 20px 0;
+  font-size: 3rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+}
+
+span {
+  display: inline-block;
+  margin: 0 auto;
+  width: 300px;
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2rem;
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+  border: 1px;
+  background: grey;
+}
+
+.twist {
+  animation: twist 1s ease infinite;
+}
+
+div svg {
+  margin-top: 20px;
+  transform: scale(0.5);
+  fill: yellow;
+}
+
+@keyframes appear {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes twist {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+
+@font-face {
+  font-family: "Comic Sans";
+  src: url("./fonts/comicsans.ttf");
+}
